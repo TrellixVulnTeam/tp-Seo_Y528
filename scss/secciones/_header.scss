@@ -1,12 +1,12 @@
 header{
-    background-color: rgb(45, 201, 69);
+    background-color: $colorFondo;
     ;
     ul{
         display: flex;
         li{
             list-style: none;
             padding: 1rem;
-            color: rgb(42, 214, 8);
+            color: $textoSecundario;
             &:hover{
                 background-color: black;
                 font-style: italic;

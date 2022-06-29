@@ -4,14 +4,15 @@
 }
 // import//
 @import './variables/_colores.scss';
+@import './variables/_tipografia.scss';
 @import './secciones/_index.scss';
 @import './secciones/_header.scss';
 
 
 h1{
-    background-color: darkgoldenrod;
-    color: rebeccapurple;
-    font-style: italic;
+    background-color: $colorFondo;
+    font-style: $typoTitle;
+    color: $textoSecundario;
 }
 
 .parte1{
@@ -21,6 +22,24 @@ h1{
         font-style: oblique;
     }
     p{
-        text-align: center;
+       @extend %estilosParrafo;
+       @include fontStyle($colorPrimario, $textoSecundario);
     }
+}
+
+// extend//
+
+%estilosParrafo{
+    text-align: center;
+    font-style: $typoTitle;
+    color: $colorSecundario;
+}
+
+// mixin //
+
+@mixin fontStyle ($colorPrimario , $textoSecundario) {
+    background-color: $colorPrimario;
+    text-transform: uppercase;
+    color: $textoSecundario;
+    
 }
