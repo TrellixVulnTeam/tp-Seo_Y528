@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 // import//
 @import './variables/_colores.scss';
 @import './variables/_tipografia.scss';
@@ -9,27 +10,29 @@
 @import './secciones/_header.scss';
 
 
-h1{
+h1 {
     background-color: $colorFondo;
     font-style: $typoTitle;
     color: $textoSecundario;
 }
 
-.parte1{
+.parte1 {
     background-color: darkred;
     color: white;
-    h2{
+
+    h2 {
         font-style: oblique;
     }
-    p{
-       @extend %estilosParrafo;
-       @include fontStyle($colorPrimario, $textoSecundario);
+
+    p {
+        @extend %estilosParrafo;
+        @include fontStyle($colorPrimario, $textoSecundario);
     }
 }
 
 // extend//
 
-%estilosParrafo{
+%estilosParrafo {
     text-align: center;
     font-style: $typoTitle;
     color: $colorSecundario;
@@ -41,5 +44,5 @@ h1{
     background-color: $colorPrimario;
     text-transform: uppercase;
     color: $textoSecundario;
-    
+
 }

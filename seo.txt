@@ -1,0 +1,4 @@
+cambios SEO
+
+meta name="description" content="Este es el sitio de practica de sass y seo"
+meta name="keywords"  content="SASS, SEO, SCSS, CSS, HTML, PRACTICA"

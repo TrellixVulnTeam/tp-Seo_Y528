@@ -1,13 +1,16 @@
-header{
+header {
     background-color: $colorFondo;
     ;
-    ul{
+
+    ul {
         display: flex;
-        li{
+
+        li {
             list-style: none;
             padding: 1rem;
             color: $textoSecundario;
-            &:hover{
+
+            &:hover {
                 background-color: black;
                 font-style: italic;
             }
